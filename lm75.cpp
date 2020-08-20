@@ -34,7 +34,7 @@ nBlock_LM75::nBlock_LM75(PinName pinSDA, PinName pinSCL, int address,
 	
 }
 
-void nBlock_LM75::triggerInput(uint32_t inputNumber, uint32_t value) {
+void nBlock_LM75::triggerInput(nBlocks_Message message) {
 	// inputNumber is ignored as we only have one input
 	// value is ignored as any value is considered a trigger for reading
 
